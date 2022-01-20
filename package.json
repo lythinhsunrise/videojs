@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "video.js": "^7.17.0"
+  },
+  "dependencies": {
+    "videojs-contrib-hls": "^5.15.0",
+    "videojs-ima": "^1.11.0"
+  }
+}
