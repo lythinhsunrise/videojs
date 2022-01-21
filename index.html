@@ -135,11 +135,12 @@
       }
     </script>
 
-    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css" >
     <link rel="stylesheet" href="node_modules/videojs-contrib-ads/dist/videojs.ads.css" />
     <link rel="stylesheet" href="node_modules/videojs-ima/dist/videojs.ima.css" />
   </head>
   <body class="page-detail">
+
     <header class="site-header" id="site-header">
       <div class="container-xxl">
         <div class="site-header__topbar">
@@ -458,17 +459,18 @@
             </figure>
           </header>
           <div class="detail__content">
+            <video id="content_video" class="video-js vjs-default-skin"
+            controls preload="auto" width="640"
+            height="360" autoplay muted>
+            <source 
+                src="videos/master.m3u8"
+                type="application/x-mpegURL" >
+            </source>
+            </video>
             <p>Thị trường chứng kho&aacute;n Mỹ tiếp tục giảm điểm trong phi&ecirc;n giao dịch ng&agrave;y thứ Năm (20/1), đảo ngược xu hướng tăng v&agrave;o đầu phi&ecirc;n, trong bối cảnh l&atilde;i suất tăng tiếp tục g&acirc;y &aacute;p lực l&ecirc;n gi&aacute; cổ phiếu ở Phố Wall. Gi&aacute; dầu th&ocirc; đi xuống từ mức đỉnh 7 năm thiết lập trong phi&ecirc;n trước. Gi&aacute; tiền ảo cũng giảm.</p>
             <p>L&uacute;c đ&oacute;ng cửa, chỉ số Dow Jones giảm 313,26 điểm, tương đương giảm 0,89%, c&ograve;n 34.715,39 điểm. Chỉ số S&amp;P 500 mất 1,1%, c&ograve;n 4.482,73 điểm. Chỉ số Nasdaq giảm 1,3%, c&ograve;n 14.154,02 điểm, d&ugrave; trước đ&oacute; trong phi&ecirc;n, c&oacute; l&uacute;c chỉ số n&agrave;y tăng 2,1%.</p>
             <p>H&ocirc;m thứ Tư, Nasdaq đ&atilde; rơi v&agrave;o trạng th&aacute;i thị trường điều chỉnh (correction) do giảm hơn 10% từ mức kỷ lục thiết lập v&agrave;o th&aacute;ng 11.</p>
-            <video id="content_video" class="video-js vjs-default-skin"
-                controls preload="auto" width="640"
-                height="360">
-                <source 
-                    src="videos/master.m3u8"
-                    type="application/x-mpegURL" >
-                </source>
-            </video>
+
             <p>Chỉ số Russell 2000 của cổ phiếu vốn ho&aacute; nhỏ giảm gần 1,9%.</p>
             <p>Một b&aacute;o c&aacute;o của Bespoke Investment Group n&oacute;i rằng b&aacute;n th&aacute;o trong những giờ giao dịch cuối đ&atilde; trở th&agrave;nh một xu hướng kể từ đầu năm đến nay. &ldquo;Gi&aacute; cổ phiếu thường tăng trong buổi s&aacute;ng, rồi bị b&aacute;n mạnh v&agrave;o cuối giờ chiều. Sự giảm điểm tệ hơn b&igrave;nh thường v&agrave;o cuối phi&ecirc;n đ&atilde; dẫn tới xu hướng giảm điểm của thị trường trong gần 1 th&aacute;ng nay&rdquo;, b&aacute;o c&aacute;o viết.</p>
             <p>Cổ phiếu Peloton sụt gần 24% sau khi một t&agrave;i liệu nội bộ của c&ocirc;ng ty do h&atilde;ng tin CNBC thu thập được cho thấy c&ocirc;ng ty sẽ tạm ngừng sản xuất c&aacute;c thiết bị tập luyện thể thao c&oacute; kết nối Internet do nhu cầu suy giảm. Năm 2020-2021, gi&aacute; cổ phiếu Peloton c&oacute; những giai đoạn tăng b&ugrave;ng nổ nhờ nhu cầu tập luyện tại nh&agrave; gia tăng khi c&aacute;c ph&ograve;ng gym đ&oacute;ng cửa.</p>
@@ -796,13 +798,13 @@
       </a>
     </div>
     <script src="https://log.hemera.com.vn/analytics.js?v=1.2.3.4.5.6789" defer></script>
-    <script src="https://media.vneconomy.vn/App_themes/js/logging.min.js?v=1.2.3.4.5.6789"></script>
+    <script src="https://media.vneconomy.vn/App_themes/js/logging.min.js?v=1.2.3.4.5.6789" ></script>
     <div class="qc d-none" id="advFooterListDetail"></div>
-    <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-    <script src="node_modules/video.js/dist/video.min.js"></script>
-    <script src="node_modules/videojs-contrib-ads/dist/videojs.ads.min.js"></script>
-    <script src="node_modules/videojs-ima/dist/videojs.ima.js"></script>
-    <script src="node_modules/can-autoplay/build/can-autoplay.min.js"></script>
-    <script src="ads.js"></script>
+    <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" defer></script>
+    <script src="node_modules/video.js/dist/video.min.js" defer></script>
+    <script src="node_modules/videojs-contrib-ads/dist/videojs.ads.min.js" defer></script>
+    <script src="node_modules/videojs-ima/dist/videojs.ima.js" defer></script>
+    <script src="node_modules/can-autoplay/build/can-autoplay.min.js" defer></script>
+    <script src="ads.js" defer></script>
   </body>
 </html>
