@@ -14,7 +14,7 @@ var options = {
 
 player.ima(options);
 //autoplay
-player.play();
+// player.play();
 
 var player1 = videojs('content_video1');
 
