@@ -42,44 +42,20 @@ player.on('timeupdate', function() {
 
 var videos = document.getElementsByTagName("video");
 
-// function playPauseVideo() {
-//   let video = document.querySelector("#content_video_html5_api");
-//   video.muted = true;
-//   let playPromise = video.play();
-//   if (playPromise !== undefined) {
-//       playPromise.then((_) => {
-//           let observer = new IntersectionObserver(
-//               (entries) => {
-//                   entries.forEach((entry) => {
-//                       if (
-//                           entry.intersectionRatio !== 1 &&
-//                           !video.paused
-//                       ) {
-//                           video.pause();
-//                       } else if (video.paused) {
-//                           video.play();
-//                       }
-//                   });
-//               },
-//               { threshold: 0.2 }
-//           );
-//           observer.observe(video);
-//       });
-//   }
-// }
-
-function playPauseVideo() {
+function playInViewPort() {
   let video = document.querySelector("#content_video_html5_api");
   video.muted = true;
+  let startplay = false;
 
   let observer = new IntersectionObserver(
       (entries) => {
           entries.forEach((entry) => {
-            console.log(entry.intersectionRatio);
               if (
-                  entry.intersectionRatio !== 0
+                  entry.intersectionRatio !== 0 
+                  && video.paused && startplay === false
               ) {
                 video.play();
+                startplay = true;
               }
           });
       },
@@ -89,4 +65,4 @@ function playPauseVideo() {
 
 }
 
-playPauseVideo();
+playInViewPort();
