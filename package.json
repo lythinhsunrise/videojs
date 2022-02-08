@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "can-autoplay": "^3.0.2",
+    "is-in-viewport": "^3.0.4",
     "videojs-contrib-hls": "^5.15.0",
     "videojs-ima": "^1.11.0"
   }
